@@ -1,0 +1,40 @@
+"""
+
+criar projeto (ou o backend):
+django-admin startproject "nome do projeto"
+
+__________________________________________________________________________
+criar api (ou o app):
+django-admin startapp "nome do api (ou o app):"
+ou
+python manage.py startapp "nome do api (ou o app):"
+
+__________________________________________________________________________
+criar ambiente virtual:
+
+"python -m venv .venv"
+
+__________________________________________________________________________
+command env:
+
+.\.venv\Scripts\Activate.ps1
+
+__________________________________________________________________________
+run project:
+"cd backend"
+"python manage.py runserver"
+
+__________________________________________________________________________
+pip install -r requirements.txt:
+
+asgiref
+Django
+django-cors-headers
+djangorestframework
+djangorestframework-simplejwt
+PyJWT
+pytz
+sqlparse
+psycopg2-binary
+python-dotenv
+"""
