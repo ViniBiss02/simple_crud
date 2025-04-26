@@ -1,5 +1,5 @@
 from django.urls import reverse_lazy
-from django.views.generic import CreateView, ListView
+from django.views.generic import CreateView, ListView, UpdateView
 from .models import Cliente
 
 class ClienteCreateView(CreateView):
@@ -11,3 +11,9 @@ class ClienteCreateView(CreateView):
 class ClienteListView(ListView):
     model = Cliente
     template_name = "Lista_clientes.html"
+
+class ClienteUpdateView(UpdateView):
+    model = Cliente
+    fields = "__all__"
+    template_name = "form_cliente.html"
+    success_url = reverse_lazy("lista_clientes")  # Certifique-se que na urls.py a rota tem o nome "lista_clientes"
